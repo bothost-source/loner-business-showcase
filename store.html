@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vanta Market — Store Demo by LONER TECH</title>
+<meta name="description" content="Vanta Market — a modern retail store demo concept by LONER TECH. Filterable catalogue and product detail.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="store">
+
+<header class="navbar">
+  <div class="wrap navbar-row">
+    <a href="index.html" class="demo-brand">
+      <span class="demo-brand-name">Vanta Market</span>
+      <span class="badge-demo">Demo Concept</span>
+    </a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"></button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#catalogue">Catalogue</a></li>
+      <li><a href="index.html#catalogue">All demos</a></li>
+      <li><a href="index.html#contact" class="btn btn-primary">Request a Website</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero-photo" style="background-image:url('images/store/hero.jpg')" role="img" aria-label="Vanta Market">
+  <div class="wrap hero-photo-content">
+    <span class="badge-demo">Demo Concept — by LONER TECH</span>
+    <h1>Vanta Market</h1>
+    <p>A modern retail-store concept designed to showcase products clearly and give customers an easy way to explore a catalogue and get in touch.</p>
+    <div class="hero-photo-actions">
+      <a href="#catalogue" class="btn btn-on-photo">Browse the catalogue</a>
+      <a href="index.html#catalogue" class="btn btn-secondary" style="border-color:#fff;color:#fff">Back to all demos</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="page-section wrap-narrow" style="text-align:center; margin: 0 auto;">
+  <p class="eyebrow-code">About</p>
+  <h2>Products, presented clearly</h2>
+  <p class="lede" style="margin: 14px auto 0; max-width: 56ch;">Vanta Market keeps the focus on the products — clear photography, honest pricing, and a catalogue that's easy to filter by category.</p>
+</section>
+
+<section id="catalogue" class="page-section wrap">
+  <div class="section-head">
+    <h2>Catalogue</h2>
+    <p class="section-sub">Filter by category, or browse everything at once.</p>
+  </div>
+
+  <div class="filter-bar" data-filter-target="#catalogue-grid">
+    <button type="button" class="filter-chip" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="filter-chip" data-filter="Fashion" aria-pressed="false">Fashion</button>
+    <button type="button" class="filter-chip" data-filter="Accessories" aria-pressed="false">Accessories</button>
+    <button type="button" class="filter-chip" data-filter="Footwear" aria-pressed="false">Footwear</button>
+  </div>
+
+  <div id="catalogue-grid" class="card-grid cols-3">
+    <article class="item-card" data-tag="Fashion">
+      <img src="images/store/shirt.jpg" alt="Classic Shirt" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top"><span class="item-card-name">Classic Shirt</span><span class="item-card-price">₦18,000</span></div>
+        <span class="item-card-tag">Fashion</span>
+      </div>
+    </article>
+    <article class="item-card" data-tag="Fashion">
+      <img src="images/store/trousers.jpg" alt="Everyday Trousers" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top"><span class="item-card-name">Everyday Trousers</span><span class="item-card-price">₦25,000</span></div>
+        <span class="item-card-tag">Fashion</span>
+      </div>
+    </article>
+    <article class="item-card" data-tag="Fashion">
+      <img src="images/store/jacket.jpg" alt="Casual Jacket" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top"><span class="item-card-name">Casual Jacket</span><span class="item-card-price">₦35,000</span></div>
+        <span class="item-card-tag">Fashion</span>
+      </div>
+    </article>
+
+    <article class="item-card" data-tag="Accessories">
+      <img src="images/store/wallet.jpg" alt="Leather Wallet" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top"><span class="item-card-name">Leather Wallet</span><span class="item-card-price">₦12,000</span></div>
+        <span class="item-card-tag">Accessories</span>
+      </div>
+    </article>
+    <article class="item-card" data-tag="Accessories">
+      <img src="images/store/watch.jpg" alt="Classic Wristwatch" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top"><span class="item-card-name">Classic Wristwatch</span><span class="item-card-price">₦28,000</span></div>
+        <span class="item-card-tag">Accessories</span>
+      </div>
+    </article>
+    <article class="item-card" data-tag="Accessories">
+      <img src="images/store/bag.jpg" alt="Everyday Bag" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top"><span class="item-card-name">Everyday Bag</span><span class="item-card-price">₦30,000</span></div>
+        <span class="item-card-tag">Accessories</span>
+      </div>
+    </article>
+
+    <article class="item-card" data-tag="Footwear">
+      <img src="images/store/sneakers.jpg" alt="Casual Sneakers" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top"><span class="item-card-name">Casual Sneakers</span><span class="item-card-price">₦45,000</span></div>
+        <span class="item-card-tag">Footwear</span>
+      </div>
+    </article>
+    <article class="item-card" data-tag="Footwear">
+      <img src="images/store/loafers.jpg" alt="Classic Loafers" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top"><span class="item-card-name">Classic Loafers</span><span class="item-card-price">₦38,000</span></div>
+        <span class="item-card-tag">Footwear</span>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="wrap-narrow">
+    <h2>Want a website like this for your store?</h2>
+    <p>This entire demo — product filtering, clean catalogue layout, mobile navigation — is what LONER TECH builds for real businesses.</p>
+    <a href="index.html#contact" class="btn btn-primary">Request a Website</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap site-footer-row">
+    <p>Demo Concept by LONER TECH</p>
+    <a href="index.html#catalogue">Back to catalogue</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Northline Properties — Real Estate Demo by LONER TECH</title>
+<meta name="description" content="Northline Properties — a real estate showcase demo concept by LONER TECH. Property listings with full detail.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="real-estate">
+
+<header class="navbar">
+  <div class="wrap navbar-row">
+    <a href="index.html" class="demo-brand">
+      <span class="demo-brand-name">Northline Properties</span>
+      <span class="badge-demo">Demo Concept</span>
+    </a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"></button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#listings">Listings</a></li>
+      <li><a href="index.html#catalogue">All demos</a></li>
+      <li><a href="index.html#contact" class="btn btn-primary">Request a Website</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero-photo" style="background-image:url('images/real-estate/hero.jpg')" role="img" aria-label="Northline Properties">
+  <div class="wrap hero-photo-content">
+    <span class="badge-demo">Demo Concept — by LONER TECH</span>
+    <h1>Northline Properties</h1>
+    <p>A real-estate showcase concept for presenting residential properties with clear details, photography, and inquiry options.</p>
+    <div class="hero-photo-actions">
+      <a href="#listings" class="btn btn-on-photo">View listings</a>
+      <a href="index.html#catalogue" class="btn btn-secondary" style="border-color:#fff;color:#fff">Back to catalogue</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="page-section wrap-narrow" style="text-align:center; margin: 0 auto;">
+  <p class="eyebrow-code">About</p>
+  <h2>Clear details, real photography</h2>
+  <p class="lede" style="margin: 14px auto 0; max-width: 56ch;">Northline Properties presents each listing with the details a buyer actually wants — bedrooms, bathrooms, location, and features — alongside real photography, not stock imagery.</p>
+</section>
+
+<section id="listings" class="page-section wrap">
+  <div class="section-head">
+    <h2>Property Listings</h2>
+    <p class="section-sub">Fictional demonstration properties — filter by type, or browse everything at once.</p>
+  </div>
+
+  <div class="filter-bar" data-filter-target="#listings-grid">
+    <button type="button" class="filter-chip" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="filter-chip" data-filter="Apartment" aria-pressed="false">Apartment</button>
+    <button type="button" class="filter-chip" data-filter="Duplex" aria-pressed="false">Duplex</button>
+  </div>
+
+  <div id="listings-grid" class="card-grid cols-3">
+    <article class="item-card" data-tag="Apartment">
+      <img src="images/real-estate/apartment-3bed.jpg" alt="Modern 3-Bedroom Apartment" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top">
+          <span class="item-card-name">Modern 3-Bedroom Apartment</span>
+          <span class="item-card-price">₦85,000,000</span>
+        </div>
+        <span class="item-card-tag">Apartment</span>
+        <p class="item-card-meta">3 bed · 3 bath · Demo Property Location</p>
+        <p class="item-card-meta">Status: Available for demonstration</p>
+        <p class="item-card-meta">Features: Spacious living area, Fitted kitchen, Parking, Security, Modern finishing</p>
+      </div>
+    </article>
+
+    <article class="item-card" data-tag="Duplex">
+      <img src="images/real-estate/duplex-4bed.jpg" alt="Contemporary 4-Bedroom Duplex" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top">
+          <span class="item-card-name">Contemporary 4-Bedroom Duplex</span>
+          <span class="item-card-price">₦150,000,000</span>
+        </div>
+        <span class="item-card-tag">Duplex</span>
+        <p class="item-card-meta">4 bed · 4 bath · Demo Property Location</p>
+        <p class="item-card-meta">Status: Available for demonstration</p>
+        <p class="item-card-meta">Features: Spacious living area, Fitted kitchen, Parking, Security, Modern finishing</p>
+      </div>
+    </article>
+
+    <article class="item-card" data-tag="Apartment">
+      <img src="images/real-estate/apartment-2bed.jpg" alt="2-Bedroom City Apartment" onerror="this.remove()">
+      <div class="item-card-body">
+        <div class="item-card-top">
+          <span class="item-card-name">2-Bedroom City Apartment</span>
+          <span class="item-card-price">₦65,000,000</span>
+        </div>
+        <span class="item-card-tag">Apartment</span>
+        <p class="item-card-meta">2 bed · 2 bath · Demo Property Location</p>
+        <p class="item-card-meta">Status: Available for demonstration</p>
+        <p class="item-card-meta">Features: Spacious living area, Fitted kitchen, Parking, Security, Modern finishing</p>
+      </div>
+    </article>
+  </div>
+
+  <p style="color:var(--muted); font-size:13.5px; margin-top:20px;">These are fictional demonstration properties, not real listings for sale.</p>
+</section>
+
+<section class="cta-banner">
+  <div class="wrap-narrow">
+    <h2>Want a website like this for your listings?</h2>
+    <p>This entire demo — property filtering, full detail per listing, mobile navigation — is what LONER TECH builds for real businesses.</p>
+    <a href="index.html#contact" class="btn btn-primary">Request a Website</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap site-footer-row">
+    <p>Demo Concept by LONER TECH</p>
+    <a href="index.html#catalogue">Back to catalogue</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

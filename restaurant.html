@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember & Plate — Restaurant Demo by LONER TECH</title>
+<meta name="description" content="Ember & Plate — a modern restaurant demo concept by LONER TECH. Menu, gallery, and story.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body data-theme="restaurant">
+
+<header class="navbar">
+  <div class="wrap navbar-row">
+    <a href="index.html" class="demo-brand">
+      <span class="demo-brand-name">Ember & Plate</span>
+      <span class="badge-demo">Demo Concept</span>
+    </a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"></button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="index.html#catalogue">All demos</a></li>
+      <li><a href="index.html#contact" class="btn btn-primary">Request a Website</a></li>
+    </ul>
+  </div>
+</header>
+
+<section class="hero-photo" style="background-image:url('images/restaurant/hero.jpg')" role="img" aria-label="Ember & Plate restaurant">
+  <div class="wrap hero-photo-content">
+    <span class="badge-demo">Demo Concept — by LONER TECH</span>
+    <h1>Ember & Plate</h1>
+    <p>A modern restaurant concept focused on locally inspired dishes, grilled specialties, refreshing drinks, and a comfortable dining experience.</p>
+    <div class="hero-photo-actions">
+      <a href="#menu" class="btn btn-on-photo">View the menu</a>
+      <a href="index.html#catalogue" class="btn btn-secondary" style="border-color:#fff;color:#fff">Back to catalogue</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="page-section wrap">
+  <div class="two-col">
+    <div>
+      <p class="eyebrow-code">About</p>
+      <h2>A comfortable place to eat well</h2>
+      <p class="lede">Ember & Plate is built around locally inspired dishes, grilled specialties, and a relaxed dining room — the kind of place that works for a quick lunch or a slower evening out.</p>
+    </div>
+    <img src="images/restaurant/interior.jpg" alt="Ember & Plate interior" onerror="this.remove()">
+  </div>
+</section>
+
+<section id="menu" class="page-section wrap">
+  <div class="section-head">
+    <h2>Menu</h2>
+    <p class="section-sub">Filter by course, or browse everything at once.</p>
+  </div>
+
+  <div class="filter-bar" data-filter-target="#menu-list">
+    <button type="button" class="filter-chip" data-filter="all" aria-pressed="true">All</button>
+    <button type="button" class="filter-chip" data-filter="Starters" aria-pressed="false">Starters</button>
+    <button type="button" class="filter-chip" data-filter="Main Dishes" aria-pressed="false">Main Dishes</button>
+    <button type="button" class="filter-chip" data-filter="Drinks" aria-pressed="false">Drinks</button>
+    <button type="button" class="filter-chip" data-filter="Desserts" aria-pressed="false">Desserts</button>
+  </div>
+
+  <div id="menu-list" class="menu-list">
+    <div class="menu-row" data-tag="Starters"><div class="menu-row-main"><span class="menu-row-name">Pepper Prawns</span></div><span class="menu-row-price">₦8,500</span></div>
+    <div class="menu-row" data-tag="Starters"><div class="menu-row-main"><span class="menu-row-name">Crispy Spring Rolls</span></div><span class="menu-row-price">₦5,500</span></div>
+    <div class="menu-row" data-tag="Starters"><div class="menu-row-main"><span class="menu-row-name">Chicken Wings</span></div><span class="menu-row-price">₦7,500</span></div>
+
+    <div class="menu-row" data-tag="Main Dishes"><div class="menu-row-main"><span class="menu-row-name">Grilled Chicken & Jollof Rice</span></div><span class="menu-row-price">₦12,000</span></div>
+    <div class="menu-row" data-tag="Main Dishes"><div class="menu-row-main"><span class="menu-row-name">Beef Suya Platter</span></div><span class="menu-row-price">₦14,000</span></div>
+    <div class="menu-row" data-tag="Main Dishes"><div class="menu-row-main"><span class="menu-row-name">Grilled Salmon & Vegetables</span></div><span class="menu-row-price">₦18,000</span></div>
+    <div class="menu-row" data-tag="Main Dishes"><div class="menu-row-main"><span class="menu-row-name">Creamy Pasta</span></div><span class="menu-row-price">₦11,500</span></div>
+
+    <div class="menu-row" data-tag="Drinks"><div class="menu-row-main"><span class="menu-row-name">Fresh Orange Juice</span></div><span class="menu-row-price">₦4,000</span></div>
+    <div class="menu-row" data-tag="Drinks"><div class="menu-row-main"><span class="menu-row-name">Mango Cooler</span></div><span class="menu-row-price">₦4,500</span></div>
+    <div class="menu-row" data-tag="Drinks"><div class="menu-row-main"><span class="menu-row-name">Classic Lemonade</span></div><span class="menu-row-price">₦3,500</span></div>
+
+    <div class="menu-row" data-tag="Desserts"><div class="menu-row-main"><span class="menu-row-name">Chocolate Cake</span></div><span class="menu-row-price">₦5,500</span></div>
+    <div class="menu-row" data-tag="Desserts"><div class="menu-row-main"><span class="menu-row-name">Vanilla Ice Cream</span></div><span class="menu-row-price">₦4,000</span></div>
+  </div>
+</section>
+
+<section id="gallery" class="page-section wrap">
+  <div class="section-head">
+    <h2>Gallery</h2>
+    <p class="section-sub">A look inside Ember & Plate.</p>
+  </div>
+  <div class="gallery-grid">
+    <a href="images/restaurant/interior.jpg" target="_blank" rel="noopener"><img src="images/restaurant/interior.jpg" alt="Interior" onerror="this.closest('a').remove()"></a>
+    <a href="images/restaurant/dish-1.jpg" target="_blank" rel="noopener"><img src="images/restaurant/dish-1.jpg" alt="Grilled Chicken & Jollof Rice" onerror="this.closest('a').remove()"></a>
+    <a href="images/restaurant/dish-2.jpg" target="_blank" rel="noopener"><img src="images/restaurant/dish-2.jpg" alt="Beef Suya Platter" onerror="this.closest('a').remove()"></a>
+    <a href="images/restaurant/dish-3.jpg" target="_blank" rel="noopener"><img src="images/restaurant/dish-3.jpg" alt="Grilled Salmon & Vegetables" onerror="this.closest('a').remove()"></a>
+    <a href="images/restaurant/drink.jpg" target="_blank" rel="noopener"><img src="images/restaurant/drink.jpg" alt="A drink from Ember & Plate" onerror="this.closest('a').remove()"></a>
+    <a href="images/restaurant/dessert.jpg" target="_blank" rel="noopener"><img src="images/restaurant/dessert.jpg" alt="A dessert from Ember & Plate" onerror="this.closest('a').remove()"></a>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="wrap-narrow">
+    <h2>Want a website like this for your restaurant?</h2>
+    <p>This entire demo — menu filtering, gallery, mobile navigation — is what LONER TECH builds for real businesses.</p>
+    <a href="index.html#contact" class="btn btn-primary">Request a Website</a>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap site-footer-row">
+    <p>Demo Concept by LONER TECH</p>
+    <a href="index.html#catalogue">Back to catalogue</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

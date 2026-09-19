@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>LONER TECH — Business Website Showcase</title>
+<meta name="description" content="Explore real demo websites LONER TECH has built for restaurants, salons, hotels, real estate, and stores.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;1,9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+  <div class="wrap navbar-row">
+    <a href="#top" class="brand">
+      <span class="brand-mark">LT</span>
+      <span class="brand-name">LONER TECH</span>
+    </a>
+    <button type="button" class="nav-toggle" aria-label="Open menu" aria-expanded="false"></button>
+    <ul class="nav-links">
+      <li><a href="#catalogue">Catalogue</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#contact" class="btn btn-primary">Request a Website</a></li>
+    </ul>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="hero-landing">
+    <div class="wrap hero-landing-grid">
+      <div>
+        <p class="eyebrow-code">Business Website Showcase</p>
+        <h1>See what your business's website could look like.</h1>
+        <p>LONER TECH builds fast, mobile-first websites for restaurants, salons, hotels, real estate, and stores. Every demo below is a real, working site — browse one end to end before you commission your own.</p>
+        <a href="#catalogue" class="btn btn-primary">Browse the catalogue</a>
+      </div>
+      <div class="hero-collage">
+        <a href="restaurant.html" aria-label="Ember & Plate — Restaurant demo">
+          <img src="images/restaurant/hero.jpg" alt="Ember & Plate restaurant demo" onerror="this.closest('a').remove()">
+        </a>
+        <a href="salon.html" aria-label="Noir & Bloom Studio — Salon demo">
+          <img src="images/salon/hero.jpg" alt="Noir & Bloom Studio salon demo" onerror="this.closest('a').remove()">
+        </a>
+        <a href="hotel.html" aria-label="The Ivory Haven — Hotel demo">
+          <img src="images/hotel/hero.jpg" alt="The Ivory Haven hotel demo" onerror="this.closest('a').remove()">
+        </a>
+        <a href="real-estate.html" aria-label="Northline Properties — Real estate demo">
+          <img src="images/real-estate/hero.jpg" alt="Northline Properties real estate demo" onerror="this.closest('a').remove()">
+        </a>
+        <a href="store.html" aria-label="Vanta Market — Store demo">
+          <img src="images/store/hero.jpg" alt="Vanta Market store demo" onerror="this.closest('a').remove()">
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="catalogue" class="catalogue wrap">
+    <div class="section-head">
+      <h2>Catalogue</h2>
+      <p class="section-sub">Five real demos, one per business type. Open any of them — every page, button, and filter actually works.</p>
+    </div>
+
+    <div class="category-grid">
+      <a class="category-card" href="restaurant.html">
+        <img src="images/restaurant/hero.jpg" alt="Ember & Plate" onerror="this.remove()">
+        <div class="category-card-body">
+          <p class="category-code">01 · RESTAURANT</p>
+          <h3 class="category-card-name">Ember & Plate</h3>
+          <p class="category-card-desc">Modern dining concept — full menu, gallery, and story.</p>
+        </div>
+      </a>
+
+      <a class="category-card" href="salon.html">
+        <img src="images/salon/hero.jpg" alt="Noir & Bloom Studio" onerror="this.remove()">
+        <div class="category-card-body">
+          <p class="category-code">02 · SALON</p>
+          <h3 class="category-card-name">Noir & Bloom Studio</h3>
+          <p class="category-card-desc">Beauty studio concept — services, gallery, and story.</p>
+        </div>
+      </a>
+
+      <a class="category-card" href="hotel.html">
+        <img src="images/hotel/hero.jpg" alt="The Ivory Haven" onerror="this.remove()">
+        <div class="category-card-body">
+          <p class="category-code">03 · HOTEL</p>
+          <h3 class="category-card-name">The Ivory Haven</h3>
+          <p class="category-card-desc">Hotel concept — rooms, amenities, and gallery.</p>
+        </div>
+      </a>
+
+      <a class="category-card" href="real-estate.html">
+        <img src="images/real-estate/hero.jpg" alt="Northline Properties" onerror="this.remove()">
+        <div class="category-card-body">
+          <p class="category-code">04 · REAL ESTATE</p>
+          <h3 class="category-card-name">Northline Properties</h3>
+          <p class="category-card-desc">Property showcase concept — listings with full detail.</p>
+        </div>
+      </a>
+
+      <a class="category-card" href="store.html">
+        <img src="images/store/hero.jpg" alt="Vanta Market" onerror="this.remove()">
+        <div class="category-card-body">
+          <p class="category-code">05 · STORE</p>
+          <h3 class="category-card-name">Vanta Market</h3>
+          <p class="category-card-desc">Retail concept — filterable catalogue and product detail.</p>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <section id="contact" class="page-section wrap-narrow">
+    <div class="section-head">
+      <h2>Request a website</h2>
+      <p class="section-sub">Like what you see? Reach LONER TECH directly and get a site built for your business.</p>
+    </div>
+
+    <!--
+      Fill in the real href on each link below, then delete that link's
+      `hidden` attribute so it appears. Never leave a placeholder value
+      here — an unset link should stay hidden, not point at "#".
+    -->
+    <div class="contact-links">
+      <a href="#" class="btn btn-primary" hidden>Message on WhatsApp</a>
+      <a href="#" class="btn btn-primary" hidden>Send an email</a>
+      <a href="#" class="btn btn-secondary" hidden>View full portfolio</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap site-footer-row">
+    <p>LONER TECH — Business Website Showcase</p>
+    <a href="#catalogue">Back to catalogue</a>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
